@@ -6,10 +6,13 @@ def get_digit_d(n):
     for digit in string_repr:
         if (n % int(digit)) > 0:
             get_digit_d +=1
-    return get_digit_d
+    if get_digit_d == 0:
+        return True
+    else:
+        return False
 #Run only if called as a script
 if __name__ == '__main__':
     n = int(input("Enter a number = "))
-    print(get_digit_d(n) == 0)
+    print(get_digit_d(n))
 
 

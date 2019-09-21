@@ -8,6 +8,7 @@ def is_beauty(n):
             digits_sum +=int(digit)
         return digits_sum
     print (n % get_digit_sum(n) == 0)
+    return is_beauty
 #Run only if called as a script
 if __name__ == '__main__':
     is_beauty(221)
