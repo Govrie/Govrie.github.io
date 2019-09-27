@@ -10,6 +10,7 @@ def get_digit_d(n):
         return True
     else:
         return False
+    return get_digit_d
 #Run only if called as a script
 if __name__ == '__main__':
     n = int(input("Enter a number = "))
