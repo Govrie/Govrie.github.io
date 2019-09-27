@@ -8,7 +8,6 @@ def is_prime(n):
             if n % i == 0:
                 return False
         return True
-    return is_prime
 upper_limit = int(input("Enter a number = "))
 print(is_prime(upper_limit))
 
